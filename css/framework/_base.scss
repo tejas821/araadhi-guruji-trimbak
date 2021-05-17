@@ -1,0 +1,400 @@
+@import url('../fonts/roboto/font.css');
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  margin:0px;
+  padding:0px;
+  font-family: font(H), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: fg(1);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+}
+
+body, html{
+  height:100%;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input{
+  border: 1px solid border(2);
+  @extend .roundRect;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+.bold{
+  font-weight: 700;
+}
+.semibold{
+  font-weight: 600;
+}
+.medium{
+  font-weight: 500;
+}
+.regular{
+  font-weight: 400;
+}
+.light{
+  font-weight: 300;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+
+.no-shrink{
+  flex-shrink: 0;
+}
+
+.horizontal{
+  display:flex;
+}
+.vertical{
+  display:flex;
+  flex-direction: column;
+}
+.center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.alignCenter{
+  align-items: center;
+}
+.alignStretch{
+  align-items: stretch;
+}
+.justifyCenter{
+  justify-content: center;
+}
+.justifySpaceBetween{
+  justify-content: space-between;
+}
+.justifySpaceAround{
+  justify-content: space-around;
+}
+.text-center{
+  text-align: center;
+}
+
+.circular{
+  border-radius: 50%;
+}
+.roundRect{
+  border-radius: border_rad(1);
+}
+.roundRect1{
+  border-radius: border_rad(2);
+}
+.roundRect2{
+  border-radius: border_rad(3);
+}
+.scroll{
+  overflow: auto;
+}
+.relative{
+  position: relative;
+}
+.transition{
+  transition: all 0.4s;
+}
+.absolute{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.fixed{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.fixedBottom{
+  position: absolute;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+.flex1{
+  flex: 1;
+}
+.flex2{
+  flex: 2;
+}
+.flex3{
+  flex: 3;
+}
+
+.invisible{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon {
+  @extend .center;
+  width: 48px;
+}
+.icon-mini {
+  @extend .center;
+  width: 40px;
+}
+.icon-micro {
+  @extend .center;
+  width: 32px;
+}
+/*
+
+.loader {
+  border: 4px solid fg(4); !* Light grey *!
+  border-top: 4px solid transparent; !* Blue *!
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+}
+*/
+
+
+.no-overflow{
+  overflow: hidden;
+}
+
+.overflowY{
+  overflow-y: scroll ;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.contentScreen{
+  background-color: bg(1);
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.6);
+  @extend .fixed;
+  z-index: 100;
+}
+
+
+.floatingButtonContainer {
+  position: fixed;
+  bottom: margin(H2);
+  right: margin(H2);
+  padding: pad(L1);
+
+}
+
+
+.keyboard {
+  background: rgba(255, 255, 255, 0.80);
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: calc(100% - 250px);
+  left: 0;
+  height: 250px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+
+  .alphabetSpan {
+    @extend .center;
+    position: relative;
+    margin: 1px;
+    background-color: white;
+    border-radius: 4px;
+    color: #4a4a4a;
+    border: 1px solid #f4f9ff;
+  }
+  .alphaClicked {
+    @extend .center;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 4px;
+    position: absolute;
+    height: 60px;
+    background-color: white;
+    color: white;
+    top: -65px;
+  }
+
+}
+
+body{
+
+  .forwardAnimate{
+
+    .ngViewContent.ng-enter {
+      animation: slideInRight 0.4s both ease-out;
+      z-index: 9999;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .ngViewContent.ng-leave {
+      animation: slideOutLeft 0.4s both ease-out;
+      z-index: 8888;
+    }
+
+    @keyframes slideOutLeft {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-20%);
+      }
+    }
+
+  }
+
+  .backAnimate{
+    .ngViewContent.ng-enter {
+      animation: slideInLeft 0.4s both ease-out;
+      z-index: 8888;
+      transform-origin: 50% 50%;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-20%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    .ngViewContent.ng-leave {
+      animation: slideOutRight 0.4s both ease-out;
+      z-index: 9999;
+    }
+
+    @keyframes slideOutRight {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  .popUpAnimate{
+
+    .ngViewContent.ng-enter {
+      animation: slideInBottom 0.4s both ease-out;
+      z-index: 9999;
+    }
+
+    @keyframes slideInBottom {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .ngViewContent.ng-leave {
+
+      z-index: 8888;
+    }
+  }
+
+  .popDownAnimate{
+
+    .ngViewContent.ng-enter {
+      z-index: 8888;
+    }
+
+    .ngViewContent.ng-leave {
+      animation: slideDownBottom 0.4s both ease-out;
+      z-index: 9999;
+    }
+
+    @keyframes slideDownBottom {
+      from {
+        transform: translateY(0%);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+
+  }
+
+}
+
+.cipHighlights{
+  hl1, hl2, hl3, hl4, hl5, hl6, hl7, hl8, hl9{
+    font-weight: 600;
+  }
+}
+.contentCardHighlights{
+  em{
+    font-weight: 600;
+    /*background: #FFEEDF;
+    color: #212121;*/
+    color: #8B572A;
+    font-style: normal;
+  }
+  b{
+    font-weight: 600;
+  }
+  h{
+    font-weight: 600;
+    font-size: 14px;
+    color: #1f1e1e;
+    /* text-decoration: underline; */
+    background-color: #fff8bb;
+    letter-spacing: 0.3px;
+    padding: 0 4px;
+    margin-bottom: 6px;
+  }
+}
+
+

@@ -1,0 +1,18 @@
+@function font($name) {
+  @return map_get($fonts, $name);
+}
+@function color($name) {
+  @return map_get($colors, $name);
+}
+@function backgroundColor($name) {
+  @return map_get($backgroundColors, $name);
+}
+@function fontSize($name) {
+  @return map_get($fontSizes, $name);
+}
+@function padding($name) {
+  @return map_get($padMar, $name);
+}
+@function margin($name) {
+  @return map_get($padMar, $name);
+}

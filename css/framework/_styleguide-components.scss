@@ -1,0 +1,72 @@
+body {
+  @extend .contentFont, .text-normal, .text-dark;
+  background-color: white;
+  overflow: hidden;
+}
+.ngViewContainer {
+  @extend .fixed;
+  background-color: white;
+  color: fg(1);
+  overflow: hidden;
+}
+.ngview {
+  background-color: white;
+}
+.pageContainer{
+  @extend .relative, .vertical;
+  height: 100%;
+}
+.fab{
+  @extend .center;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background: #103867;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
+  padding-right: 4px;
+
+  img{
+    height: 32px;
+  }
+}
+.fab:active{
+  transform: translate(2px,2px);
+}
+.ipHighlights{
+  @extend .contentFont;
+  line-height: 24px;
+  e{
+    font-weight: 500;
+    color: #115f85;
+  }
+}
+.circularPageLoader {
+  @extend .center;
+  position: fixed;
+  left: 50%;
+  bottom: margin(H6);
+  transform: translateX(-50%);
+  z-index: 10000;
+
+  .loader {
+    border: 3px solid #2390D9; /* Light grey */
+    border-top: 3px solid transparent; /* Blue */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+

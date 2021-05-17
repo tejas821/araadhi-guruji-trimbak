@@ -1,0 +1,82 @@
+@import 'theme';
+@import 'framework/prototype';
+@import 'framework/base';
+@import 'framework/styleguide';
+@import 'framework/styleguide-components';
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600,700,800,900');
+
+// find *unwanted css* to remove height from register and validate mobile screen
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+h1{
+  @extend .text-cust42;
+  font: normal normal normal 72px/1.25em 'playfair display',serif;
+  color:#411E64;
+  word-wrap: break-word;
+  line-height: 1.25em;
+}
+
+p{
+  color:#FF9A32;
+  line-height: 1.67em;
+  font: normal normal normal 20px/1.67em 'playfair display',serif;
+}
+
+h4{
+  @extend .text-small;
+  font-weight: 500;
+}
+
+body{
+  @extend .contentFont;
+  background-color: aqua;
+}
+
+// Main Page
+.ngViewContainer .main-header-home{
+  @extend .horizontal, .justifySpaceBetween;
+  height: 100px;
+  background-color: rgb(255,154,50);
+  .header-list{
+    @extend .horizontal;
+    cursor: pointer;
+  }
+  .left-header{
+    @extend .vertical, .center;
+    cursor: pointer;
+    .company-logo{
+      @extend .vertical, .center;
+      margin-left: 20px;
+    }
+    .header-title{
+      @extend .center;
+      max-width: 265px;
+      margin-left: 10px;
+    }
+  }
+  .right-header{
+    @extend .vertical, .center;
+    margin-right: 30px;
+    .header-item{
+      padding: 0px 10px;
+    }
+  } 
+}
+
+// home Page
+#homeContainer{
+  .landing-screen{
+    @extend .horizontal;
+    // height: 100vh;
+    .left-panel{
+      width: 50%;
+      img{
+        height:130vh;
+      }
+    }
+    .right-panel{
+      padding: 10px 90px 0px 60px;
+    }
+  }
+}

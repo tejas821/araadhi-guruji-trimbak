@@ -1,0 +1,106 @@
+$fonts: (P: "Open Sans", H: "Futura Md BT", N: "Roboto Condensed");
+$fontSizes: (N: 16px, S1: 14px, S2: 13px, S3: 12px, B1: 18px, B2: 19px, B3: 22px, B4: 24px, B5: 29px, B6: 15px, B7: 9px, B8: 32px, B9: 27px, B10: 20px, B11: 17px, B12: 21px, B13: 11px, B14: 35px, B15: 5px, B16: 42px);
+$padMar: (N: 16px, S1: 12px, S2: 8px, S3: 4px, B1: 24px, B2: 32px, B3: 40px, B4: 48px);
+$colors: (N: #212529, D2: #000, L1: #6c757d);
+$backgroundColors: (BG: #f4f6f8, CONTENT: #fff);
+@import 'helper';
+
+
+
+.contentFont{
+  font-family: font(P);
+}
+.headingFont{
+  font-family: font(H);
+}
+.text-normal{ //16px
+  font-size: fontSize(N);
+}
+.text-small{ //14px
+  font-size: fontSize(S1);
+}
+.text-smaller{ //13px
+  font-size: fontSize(S2);
+}
+.text-smallest{ //12px
+  font-size: fontSize(S3);
+}
+.text-big{ //18px
+  font-size: fontSize(B1);
+}
+.text-bigger{ //19px
+  font-size: fontSize(B2);
+}
+.text-biggest{ //22px
+  font-size: fontSize(B3);
+}
+.text-large{ //24px
+  font-size: fontSize(B4);
+}
+.text-larger{ //29px
+  font-size: fontSize(B5);
+}
+.text-large23{ //23px
+  font-size: fontSize(B5);
+}
+.text-cust15{ //15px
+  font-size: fontSize(B6);
+}
+.text-cust9{ //9px
+  font-size: fontSize(B7);
+}
+.text-cust32{ //32px
+  font-size: fontSize(B8);
+}
+.text-cust27{ //27px
+  font-size: fontSize(B9);
+}
+.text-cust20{ //20px
+  font-size: fontSize(B10);
+}
+.text-cust17{ //17px
+  font-size: fontSize(B11);
+}
+.text-cust21{ //21px
+  font-size: fontSize(B12);
+}
+.text-cust11{ //11px
+  font-size: fontSize(B13);
+}
+.text-cust35{ //35px
+  font-size: fontSize(B14);
+}
+.text-cust5{ //5px
+  font-size: fontSize(B15);
+}
+.text-cust42{ //42px
+  font-size: fontSize(B16);
+}
+
+.text-darkest{
+  color: fg(0);
+}
+.text-dark{
+  color: fg(1);
+}
+.text-dark-light-shade{
+  color: fg(2);
+}
+.text-dark-lighter-shade{
+  color: fg(3);
+}
+.text-dark-lightest-shade{
+  color: fg(4);
+}
+.btn {
+  @extend .text-bigger, .medium, .center;
+  height: 59px;
+  border-radius: 4px;
+  border: solid 1px #dddddd;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  width: 100%;
+}
+.btn.loading{
+  background-color: #cdcdcd !important;
+}

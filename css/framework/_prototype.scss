@@ -1,0 +1,121 @@
+$phcolors: (1: #dadada, 2: #eee, 3: #f5f5f5);
+@function ph($name){
+  @return map_get($phcolors, $name);
+}
+.fg1{color: ph(1) !important;}
+.fg2{color: ph(2) !important;}
+.fg3{color: ph(3) !important;}
+.bg1{background-color: ph(1) !important;}
+.bg2{background-color: ph(2) !important;}
+.bg3{background-color: ph(3) !important;}
+.brd1{border: 1px solid ph(1) !important;}
+.brd2{border: 1px solid ph(2) !important;}
+.brd3{border: 1px solid ph(3) !important;}
+.sep{
+  width: 1px;
+  height: 1px;
+}
+.sep-f1{
+  @extend .flex1;
+}
+.sep-f2{
+  @extend .flex2;
+}
+.sep-f3{
+  @extend .flex3;
+}
+.ph-icon{
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  background-color: ph(1);
+
+}
+.logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: ph(1);
+}
+.ph-input1{
+  border: 1px solid ph(1);
+  height: 48px;
+  width: 60%;
+  @extend .roundRect;
+}
+.ph-fab{
+  position: fixed;
+  height: 54px;
+  width: 54px;
+  right: 20px;
+  bottom: 20px;
+  background-color: ph(1);
+  border-radius: 50%;
+  background: #D8D8D8;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.32);
+}
+.ph-text1{
+  background-color: ph(1);
+  height: 32px;
+  width: 60%;
+  border-radius: 20px;
+}
+.ph-text2{
+  background-color: ph(2);
+  height: 22px;
+  width: 80%;
+  border-radius: 20px;
+}
+.width10p{ width: 10%}
+.width20p{ width: 20%}
+.width40p{ width: 40%}
+.width50p{ width: 50%}
+.width60p{ width: 60%}
+.width80p{ width: 80%}
+.width100p{ width: 100%}
+
+.width5px{ width: 5px}
+.width10px{ width: 10px}
+.width15px{ width: 15px}
+.width20px{ width: 20px}
+.width30px{ width: 30px}
+.width40px{ width: 40px}
+.width60px{ width: 60px}
+.width80px{ width: 80px}
+.width100px{ width: 100px}
+.width120px{ width: 120px}
+
+.height5px{ height: 5px}
+.height10px{ height: 10px}
+.height15px{ height: 15px}
+.height20px{ height: 20px}
+.height30px{ height: 30px}
+.height40px{ height: 40px}
+.height60px{ height: 60px}
+
+.marB5{ margin-bottom: 5px}
+.marB10{ margin-bottom: 10px}
+.marB15{ margin-bottom: 15px}
+.marB20{ margin-bottom: 20px}
+.marB30{ margin-bottom: 30px}
+.marB40{ margin-bottom: 40px}
+
+.pad5{ padding: 5px}
+.pad10{ padding: 10px}
+.pad15{ padding: 15px}
+.pad20{ padding: 20px}
+.pad30{ padding: 30px}
+.pad40{ padding: 40px}
+
+.padH5{ padding-left: 5px;padding-right: 5px;}
+.padH10{ padding-left: 10px;padding-right: 10px;}
+.padH15{ padding-left: 15px;padding-right: 15px;}
+.padH20{ padding-left: 20px;padding-right: 20px;}
+.padH30{ padding-left: 30px;padding-right: 30px;}
+.padH40{ padding-left: 40px;padding-right: 40px;}
+
+.circular6{width: 6px; height: 6px; border-radius: 50%}
+.circular10{width: 10px; height: 10px; border-radius: 50%}
+.circular20{width: 20px; height: 20px; border-radius: 50%}
+.circular40{width: 40px; height: 40px; border-radius: 50%}
+.circular80{width: 80px; height: 80px; border-radius: 50%}

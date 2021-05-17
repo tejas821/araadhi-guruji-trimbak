@@ -1,0 +1,1117 @@
+@import url("../fonts/roboto/font.css");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+.fg1 {
+  color: #dadada !important;
+}
+
+.fg2 {
+  color: #eee !important;
+}
+
+.fg3 {
+  color: #f5f5f5 !important;
+}
+
+.bg1 {
+  background-color: #dadada !important;
+}
+
+.bg2 {
+  background-color: #eee !important;
+}
+
+.bg3 {
+  background-color: #f5f5f5 !important;
+}
+
+.brd1 {
+  border: 1px solid #dadada !important;
+}
+
+.brd2 {
+  border: 1px solid #eee !important;
+}
+
+.brd3 {
+  border: 1px solid #f5f5f5 !important;
+}
+
+.sep {
+  width: 1px;
+  height: 1px;
+}
+
+.ph-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  background-color: #dadada;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #dadada;
+}
+
+.ph-input1 {
+  border: 1px solid #dadada;
+  height: 48px;
+  width: 60%;
+}
+
+.ph-fab {
+  position: fixed;
+  height: 54px;
+  width: 54px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #dadada;
+  border-radius: 50%;
+  background: #D8D8D8;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.ph-text1 {
+  background-color: #dadada;
+  height: 32px;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.ph-text2 {
+  background-color: #eee;
+  height: 22px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.width10p {
+  width: 10%;
+}
+
+.width20p {
+  width: 20%;
+}
+
+.width40p {
+  width: 40%;
+}
+
+.width50p {
+  width: 50%;
+}
+
+.width60p {
+  width: 60%;
+}
+
+.width80p {
+  width: 80%;
+}
+
+.width100p {
+  width: 100%;
+}
+
+.width5px {
+  width: 5px;
+}
+
+.width10px {
+  width: 10px;
+}
+
+.width15px {
+  width: 15px;
+}
+
+.width20px {
+  width: 20px;
+}
+
+.width30px {
+  width: 30px;
+}
+
+.width40px {
+  width: 40px;
+}
+
+.width60px {
+  width: 60px;
+}
+
+.width80px {
+  width: 80px;
+}
+
+.width100px {
+  width: 100px;
+}
+
+.width120px {
+  width: 120px;
+}
+
+.height5px {
+  height: 5px;
+}
+
+.height10px {
+  height: 10px;
+}
+
+.height15px {
+  height: 15px;
+}
+
+.height20px {
+  height: 20px;
+}
+
+.height30px {
+  height: 30px;
+}
+
+.height40px {
+  height: 40px;
+}
+
+.height60px {
+  height: 60px;
+}
+
+.marB5 {
+  margin-bottom: 5px;
+}
+
+.marB10 {
+  margin-bottom: 10px;
+}
+
+.marB15 {
+  margin-bottom: 15px;
+}
+
+.marB20 {
+  margin-bottom: 20px;
+}
+
+.marB30 {
+  margin-bottom: 30px;
+}
+
+.marB40 {
+  margin-bottom: 40px;
+}
+
+.pad5 {
+  padding: 5px;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.pad15 {
+  padding: 15px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+.pad30 {
+  padding: 30px;
+}
+
+.pad40 {
+  padding: 40px;
+}
+
+.padH5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.padH10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padH15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.padH20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padH30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padH40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.circular6 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.circular10 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circular20 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.circular40 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.circular80 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+  margin: 0px;
+  padding: 0px;
+  font-family: font(H), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: fg(1);
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+}
+
+body, html {
+  height: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: 1px solid border(2);
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.medium, .btn {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no-shrink {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.horizontal, .ngViewContainer .main-header-home, .ngViewContainer .main-header-home .header-list, #homeContainer .landing-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vertical, .pageContainer, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center, .icon, .icon-mini, .icon-micro, .keyboard .alphabetSpan, .keyboard .alphaClicked, .btn, .fab, .circularPageLoader, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .left-header .header-title, .ngViewContainer .main-header-home .right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alignStretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.justifyCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justifySpaceBetween, .ngViewContainer .main-header-home {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justifySpaceAround {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.roundRect, .ph-input1, input {
+  border-radius: border_rad(1);
+}
+
+.roundRect1 {
+  border-radius: border_rad(2);
+}
+
+.roundRect2 {
+  border-radius: border_rad(3);
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.relative, .pageContainer {
+  position: relative;
+}
+
+.transition {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed, .overlay, .ngViewContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fixedBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flex1, .sep-f1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex2, .sep-f2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.flex3, .sep-f3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon {
+  width: 48px;
+}
+
+.icon-mini {
+  width: 40px;
+}
+
+.icon-micro {
+  width: 32px;
+}
+
+/*
+
+.loader {
+  border: 4px solid fg(4); !* Light grey *!
+  border-top: 4px solid transparent; !* Blue *!
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+}
+*/
+.no-overflow {
+  overflow: hidden;
+}
+
+.overflowY {
+  overflow-y: scroll;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.contentScreen {
+  background-color: bg(1);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.floatingButtonContainer {
+  position: fixed;
+  bottom: margin(H2);
+  right: margin(H2);
+  padding: pad(L1);
+}
+
+.keyboard {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: calc(100% - 250px);
+  left: 0;
+  height: 250px;
+  width: 100%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.keyboard .alphabetSpan {
+  position: relative;
+  margin: 1px;
+  background-color: white;
+  border-radius: 4px;
+  color: #4a4a4a;
+  border: 1px solid #f4f9ff;
+}
+
+.keyboard .alphaClicked {
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 4px;
+  position: absolute;
+  height: 60px;
+  background-color: white;
+  color: white;
+  top: -65px;
+}
+
+body .forwardAnimate .ngViewContent.ng-enter {
+  -webkit-animation: slideInRight 0.4s both ease-out;
+          animation: slideInRight 0.4s both ease-out;
+  z-index: 9999;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+body .forwardAnimate .ngViewContent.ng-leave {
+  -webkit-animation: slideOutLeft 0.4s both ease-out;
+          animation: slideOutLeft 0.4s both ease-out;
+  z-index: 8888;
+}
+
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+body .backAnimate .ngViewContent.ng-enter {
+  -webkit-animation: slideInLeft 0.4s both ease-out;
+          animation: slideInLeft 0.4s both ease-out;
+  z-index: 8888;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+body .backAnimate .ngViewContent.ng-leave {
+  -webkit-animation: slideOutRight 0.4s both ease-out;
+          animation: slideOutRight 0.4s both ease-out;
+  z-index: 9999;
+}
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+body .popUpAnimate .ngViewContent.ng-enter {
+  -webkit-animation: slideInBottom 0.4s both ease-out;
+          animation: slideInBottom 0.4s both ease-out;
+  z-index: 9999;
+}
+
+@-webkit-keyframes slideInBottom {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+body .popUpAnimate .ngViewContent.ng-leave {
+  z-index: 8888;
+}
+
+body .popDownAnimate .ngViewContent.ng-enter {
+  z-index: 8888;
+}
+
+body .popDownAnimate .ngViewContent.ng-leave {
+  -webkit-animation: slideDownBottom 0.4s both ease-out;
+          animation: slideDownBottom 0.4s both ease-out;
+  z-index: 9999;
+}
+
+@-webkit-keyframes slideDownBottom {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes slideDownBottom {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+.cipHighlights hl1, .cipHighlights hl2, .cipHighlights hl3, .cipHighlights hl4, .cipHighlights hl5, .cipHighlights hl6, .cipHighlights hl7, .cipHighlights hl8, .cipHighlights hl9 {
+  font-weight: 600;
+}
+
+.contentCardHighlights em {
+  font-weight: 600;
+  /*background: #FFEEDF;
+    color: #212121;*/
+  color: #8B572A;
+  font-style: normal;
+}
+
+.contentCardHighlights b {
+  font-weight: 600;
+}
+
+.contentCardHighlights h {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1f1e1e;
+  /* text-decoration: underline; */
+  background-color: #fff8bb;
+  letter-spacing: 0.3px;
+  padding: 0 4px;
+  margin-bottom: 6px;
+}
+
+.contentFont, body, .ipHighlights {
+  font-family: "Open Sans";
+}
+
+.headingFont {
+  font-family: "Futura Md BT";
+}
+
+.text-normal, body {
+  font-size: 16px;
+}
+
+.text-small, h4 {
+  font-size: 14px;
+}
+
+.text-smaller {
+  font-size: 13px;
+}
+
+.text-smallest {
+  font-size: 12px;
+}
+
+.text-big {
+  font-size: 18px;
+}
+
+.text-bigger, .btn {
+  font-size: 19px;
+}
+
+.text-biggest {
+  font-size: 22px;
+}
+
+.text-large {
+  font-size: 24px;
+}
+
+.text-larger {
+  font-size: 29px;
+}
+
+.text-large23 {
+  font-size: 29px;
+}
+
+.text-cust15 {
+  font-size: 15px;
+}
+
+.text-cust9 {
+  font-size: 9px;
+}
+
+.text-cust32 {
+  font-size: 32px;
+}
+
+.text-cust27 {
+  font-size: 27px;
+}
+
+.text-cust20 {
+  font-size: 20px;
+}
+
+.text-cust17 {
+  font-size: 17px;
+}
+
+.text-cust21 {
+  font-size: 21px;
+}
+
+.text-cust11 {
+  font-size: 11px;
+}
+
+.text-cust35 {
+  font-size: 35px;
+}
+
+.text-cust5 {
+  font-size: 5px;
+}
+
+.text-cust42, h1 {
+  font-size: 42px;
+}
+
+.text-darkest {
+  color: fg(0);
+}
+
+.text-dark, body {
+  color: fg(1);
+}
+
+.text-dark-light-shade {
+  color: fg(2);
+}
+
+.text-dark-lighter-shade {
+  color: fg(3);
+}
+
+.text-dark-lightest-shade {
+  color: fg(4);
+}
+
+.btn {
+  height: 59px;
+  border-radius: 4px;
+  border: solid 1px #dddddd;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn.loading {
+  background-color: #cdcdcd !important;
+}
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+.ngViewContainer {
+  background-color: white;
+  color: fg(1);
+  overflow: hidden;
+}
+
+.ngview {
+  background-color: white;
+}
+
+.pageContainer {
+  height: 100%;
+}
+
+.fab {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background: #103867;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  padding-right: 4px;
+}
+
+.fab img {
+  height: 32px;
+}
+
+.fab:active {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.ipHighlights {
+  line-height: 24px;
+}
+
+.ipHighlights e {
+  font-weight: 500;
+  color: #115f85;
+}
+
+.circularPageLoader {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10000;
+}
+
+.circularPageLoader .loader {
+  border: 3px solid #2390D9;
+  /* Light grey */
+  border-top: 3px solid transparent;
+  /* Blue */
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font: normal normal normal 72px/1.25em 'playfair display',serif;
+  color: #411E64;
+  word-wrap: break-word;
+  line-height: 1.25em;
+}
+
+p {
+  color: #FF9A32;
+  line-height: 1.67em;
+  font: normal normal normal 20px/1.67em 'playfair display',serif;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+body {
+  background-color: aqua;
+}
+
+.ngViewContainer .main-header-home {
+  height: 100px;
+  background-color: #ff9a32;
+}
+
+.ngViewContainer .main-header-home .header-list {
+  cursor: pointer;
+}
+
+.ngViewContainer .main-header-home .left-header {
+  cursor: pointer;
+}
+
+.ngViewContainer .main-header-home .left-header .company-logo {
+  margin-left: 20px;
+}
+
+.ngViewContainer .main-header-home .left-header .header-title {
+  max-width: 265px;
+  margin-left: 10px;
+}
+
+.ngViewContainer .main-header-home .right-header {
+  margin-right: 30px;
+}
+
+.ngViewContainer .main-header-home .right-header .header-item {
+  padding: 0px 10px;
+}
+
+#homeContainer .landing-screen .left-panel {
+  width: 50%;
+}
+
+#homeContainer .landing-screen .left-panel img {
+  height: 130vh;
+}
+
+#homeContainer .landing-screen .right-panel {
+  padding: 10px 90px 0px 60px;
+}
+/*# sourceMappingURL=style.css.map */

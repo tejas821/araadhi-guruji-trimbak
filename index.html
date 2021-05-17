@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!--
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="msapplication-tap-highlight" content="no" />
+    -->
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--
+      <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    -->
+    <title></title>
+
+    <!-- must-have, which will be created by cordova prepare/build -->
+    <!--<script type="text/javascript" src="cordova.js"></script>
+-->
+
+<!--
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bad+Script|Delius|Delius+Swash+Caps|Lateef|Mali|Niconne|Patrick+Hand|Patrick+Hand+SC|Rancho|Satisfy|Sunshiney&display=swap" rel="stylesheet">
+-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600|Source+Sans+Pro:400,600|Work+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/moment.js"></script>
+    <script src="lib/moment-timezone.js"></script>
+    <script src="cordova.js"></script>
+
+    <script src="lib/greensock/minified/TweenMax.min.js"></script>
+    <script src="lib/greensock/minified/utils/Draggable.min.js"></script>
+    <script src="lib/greensock/minified/plugins/TextPlugin.min.js"></script>
+    <script src="lib/greensock/minified/plugins/ThrowPropsPlugin.min.js"></script>
+    <script src="lib/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>
+    <script src="lib/greensock/minified/easing/CustomEase.min.js"></script>
+
+    <script src="jscommon/AL.js"></script>
+    <script src="jscommon/utils/collection-utils.js"></script>
+    <script src="jscommon/utils/animation-utils.js"></script>
+    <script src="jscommon/utils/string-utils.js"></script>
+    <script src="jscommon/utils/math-utils.js"></script>
+    <script src="jscommon/plugins/carousal.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/ui-helper.js"></script>
+    <script src="app/directives.js"></script>
+
+    <link href="fonts/opensans/font.css" rel="stylesheet">
+    <link href="fonts/raleway/font.css" rel="stylesheet">
+    <link href="fonts/roboto/font.css" rel="stylesheet">
+    <link href="fonts/roboto-condensed/font.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="app/services/auth-service.js"></script>
+    <script src="app/services/web-service.js"></script>
+    <script src="app/services/data-service.js"></script>
+
+    <script src="app/controllers/main-controller.js"></script>
+
+    <script src="app/controllers/home-controller.js"></script>
+    
+    
+</head>
+<body ng-app="app" ng-controller="mainCtrl">
+<div class="ngViewContainer {{pageManager.transitionType}}">
+    
+        <header class="main-header-home">
+            <div class="left-header">
+                <div class="header-list">
+                    <div class="company-logo">
+                        <img src="img/icons/logo-app.JPG" alt="company-logo">
+                    </div>
+                    <div class="header-title">
+                        <h3>SHRI VEDMURTI RANGANATH DAJI AARADHI</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right-header">
+                <div class="header-list">
+                    <div class="header-item">
+                        <h4>Home</h4>
+                    </div>
+                    <div class="header-item">
+                        <h4>Mission & Philosophy</h4>
+                    </div>
+                    <div class="header-item">
+                        <h4>Prayer</h4>
+                    </div>
+                    <div class="header-item">
+                        <h4>Priest</h4>
+                    </div>
+                    <div class="header-item">
+                        <h4>class</h4>
+                    </div>
+                    <div class="header-item">
+                        <h4>Event</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="ngViewContent" ng-view></div>
+</div>
+
+<div ng-if="screen.loading" class="circularPageLoader">
+     <div class="loader"></div>
+</div>
+
+<!-- <style>
+    /*@formatter:off*/
+    .ngViewContent{
+        position: fixed;
+        left:0;
+        background-color: rgb(26, 102, 218);
+        top:0;
+        width: {{screen.width}}px;
+        height: {{screen.height}}px;
+    }
+    .contentScreen{
+        height: {{screen.height}}px;
+    }
+    /*@formatter:on*/
+</style> -->
+
+<style>
+    /*@formatter:off*/
+    .ngViewContent{
+        opacity: 1;
+        position: fixed;
+        left:0px;
+        background-color: #F7F4E7;
+        top:100px;
+        height: 100%;
+        /* width: {{screen.width-60}}px; */
+        width: 100%;
+        overflow: auto;
+        padding-bottom: 20px;
+        /* height: {{screen.height}}px; */
+    
+    }
+/* @media only screen and (max-width: 1100px){
+    .ngViewContent{
+        width: 93%;
+    }
+}
+@media only screen and (max-width: 950px){
+    .ngViewContent{
+        width: 92%;
+        overflow-x: auto;
+    }
+}
+@media only screen and (max-width: 840px){
+    .ngViewContent{
+        width: 91%;
+    }
+} */
+    .contentScreen {
+        /* height: {{screen.height}}px; */
+        height: 50%;
+    }
+
+    /*@formatter:on*/
+</style>
+<script type="text/javascript">
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+
+    }
+
+    function onPause() {
+    }
+
+    document.addEventListener("pause", onPause, false);
+
+    function onResume() {
+    }
+
+    document.addEventListener("resume", onResume, false);
+
+</script>
+
+</body>
+</html>
+
