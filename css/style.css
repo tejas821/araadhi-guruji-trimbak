@@ -394,7 +394,7 @@ input {
   display: flex;
 }
 
-.vertical, .pageContainer, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .right-header {
+.vertical, .pageContainer, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .right-header, #homeContainer, #homeContainer .thought-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +404,7 @@ input {
           flex-direction: column;
 }
 
-.center, .icon, .icon-mini, .icon-micro, .keyboard .alphabetSpan, .keyboard .alphaClicked, .btn, .fab, .circularPageLoader, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .left-header .header-title, .ngViewContainer .main-header-home .right-header {
+.center, .icon, .icon-mini, .icon-micro, .keyboard .alphabetSpan, .keyboard .alphaClicked, .btn, .fab, .circularPageLoader, .ngViewContainer .main-header-home .left-header, .ngViewContainer .main-header-home .left-header .company-logo, .ngViewContainer .main-header-home .left-header .header-title, .ngViewContainer .main-header-home .right-header, #homeContainer .thought-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,7 +934,7 @@ body .popDownAnimate .ngViewContent.ng-leave {
   font-size: 5px;
 }
 
-.text-cust42, h1 {
+.text-cust42, h1, .thought-msg {
   font-size: 42px;
 }
 
@@ -1052,11 +1052,15 @@ body {
   }
 }
 
-h1 {
+h1, .thought-msg {
   font: normal normal normal 72px/1.25em 'playfair display',serif;
   color: #411E64;
   word-wrap: break-word;
   line-height: 1.25em;
+}
+
+.thought-msg {
+  font: normal normal normal 40px/1.35em 'playfair display',serif;
 }
 
 p {
@@ -1103,6 +1107,10 @@ body {
   padding: 0px 10px;
 }
 
+#homeContainer .landing-screen {
+  margin-bottom: 50px;
+}
+
 #homeContainer .landing-screen .left-panel {
   width: 50%;
 }
@@ -1113,5 +1121,19 @@ body {
 
 #homeContainer .landing-screen .right-panel {
   padding: 10px 90px 0px 60px;
+}
+
+#homeContainer .thought-slide {
+  height: 540px;
+  background: url("/img/images/om.png");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+}
+
+#homeContainer .thought-slide p {
+  text-align: center;
+  max-width: 65%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,12 +9,15 @@
 // find *unwanted css* to remove height from register and validate mobile screen
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
-h1{
+h1, .thought-msg{
   @extend .text-cust42;
   font: normal normal normal 72px/1.25em 'playfair display',serif;
   color:#411E64;
   word-wrap: break-word;
   line-height: 1.25em;
+}
+.thought-msg{
+  font: normal normal normal 40px/1.35em 'playfair display',serif;
 }
 
 p{
@@ -66,8 +69,10 @@ body{
 
 // home Page
 #homeContainer{
+  @extend .vertical;
   .landing-screen{
     @extend .horizontal;
+    margin-bottom: 50px;
     // height: 100vh;
     .left-panel{
       width: 50%;
@@ -77,6 +82,19 @@ body{
     }
     .right-panel{
       padding: 10px 90px 0px 60px;
+    }
+  }
+  .thought-slide{
+    @extend .vertical, .center;
+    height: 540px;
+    background: url('/img/images/om.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+  // background-size: cover; /* Resize the background image to cover the entire container */
+    // padding: 80px 100px;
+    p{
+      text-align: center;
+      max-width: 65%;
     }
   }
 }
